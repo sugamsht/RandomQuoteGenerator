@@ -47,8 +47,9 @@ export default function QuoteBox() {
   return (
     <div style={{ color }} className="containter" >
       <div id="quote-box">
-        <p id="text">" {displayQuote} "</p>
-        <p id='author'>- {author}</p>
+        
+        <p id="text"><i class="fa fa-quote-left"> </i>{displayQuote} </p>
+        <p id='author'>— {author}</p>
         <Buttons 
           color={color} 
           handleChange={handleChange}

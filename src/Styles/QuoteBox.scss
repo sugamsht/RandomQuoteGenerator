@@ -30,7 +30,7 @@ body {
 #text{
   padding-top:20px;
   margin:0 2vw 0 2vw;
-    font-size: 45px;
+    font-size: 2em;
 
 }
 
@@ -45,27 +45,34 @@ body {
 .button #new-quote{
     border-radius: 3px;
      color:white;
-     font-size: 1em;
+     font-size: 0.7em;
     padding: 12px 15px 12px 15px;
     margin-left: 20vw;
-  overflow:hidden;
+
     opacity: 1;
     &:hover {
       opacity: 0.9;
     }
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 1050px){
 button#new-quote {
-    margin: 0;
+    margin-left: 0 !important;
 }
   
+#quote-box{
+  margin-right: 10vw;
+  margin-left:10vw;
+
+}
 }
 .button {
     height:50px;
-    font-size: 1.5em;
-  margin-top:5vh;
-    padding-bottom: 5vh;
+    font-size: 1.3em;
+    margin-top:2vh;
+    padding: 1em;
+   
+    overflow:hidden;
 }
 
  a {   
@@ -84,4 +91,11 @@ button#new-quote {
       color: white;
     }
 
+  }
+
+.fa{
+    margin-right: 0.5em;
+    font-size: 0.8em;
+    text-align:inherit;
+    transform: translateY(-0.3rem);
   }
