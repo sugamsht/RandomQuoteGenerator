@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/QuoteBox.scss'
-// import SocialButtons from '../components/SocialButtons'
+import Buttons from '../components/Buttons'
 import randomColor from 'randomcolor'
 
 var color = randomColor({
@@ -37,8 +37,10 @@ export default function QuoteBox() {
   }, [])
 
   useEffect(()=>{
-    color= randomColor()
-  },[displayQuote])
+    color= randomColor({
+      luminosity: 'dark',
+   })
+  },[author])
 
  
   document.body.style.backgroundColor = color;
@@ -47,19 +49,12 @@ export default function QuoteBox() {
       <div id="quote-box">
         <p id="text">" {displayQuote} "</p>
         <p id='author'>- {author}</p>
-        <div class="button">
-          <a id='tweet-quote' style={{ background: color }}
-            href={'twitter.com/intent/tweet'}
-            target="_blank" title="Post this quote on twitter!">
-            <i className="fab fa-twitter twitter-icon" />
-          </a>
-          <a style={{ background: color }} href={`"twitter.com/intent/tweet`} target="_blank" title="Post this quote on facebook!" >
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <button style={{ background: color }} id="new-quote"
-            onClick={handleChange}>New Quote</button>
-
-        </div>
+        <Buttons 
+          color={color} 
+          handleChange={handleChange}
+          quote={displayQuote}
+          author={author}
+        />
       </div>
     </div>
 
