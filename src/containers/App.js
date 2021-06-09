@@ -1,5 +1,3 @@
-
-import '../Styles/App.css';
 import './QuoteBox'
 import QuoteBox from './QuoteBox';
 

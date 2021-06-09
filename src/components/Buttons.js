@@ -9,7 +9,7 @@ export default function Buttons(props) {
     return (
         <div class="button">
             
-            <TwitterShareButton url="https://github.com/" title={shareText} via="Sugam_" hashtags={["RandomQuoteGenerator","React"]}>
+            <TwitterShareButton url="https://sugamsht.github.io/RandomQuoteGenerator/" title={shareText} via="Sugam_" hashtags={["RandomQuoteGenerator","React"]}>
             <a id='tweet-quote' style={{ background: color }}
                 title="Post this quote on twitter!">
                 <i className="fab fa-twitter twitter-icon" />
@@ -17,7 +17,7 @@ export default function Buttons(props) {
             </TwitterShareButton>
 
 
-            <FacebookShareButton url="https://github.com/" quote={shareText}  hashtag="#RandomQuoteGenerator" >
+            <FacebookShareButton url="https://sugamsht.github.io/RandomQuoteGenerator/" quote={shareText}  hashtag="#RandomQuoteGenerator" >
                 <a style={{ background: color }} title="Post this quote on facebook!" >
                     <i class="fab fa-facebook-f"></i>
                 </a>
